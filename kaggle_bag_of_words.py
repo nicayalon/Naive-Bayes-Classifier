@@ -1,5 +1,5 @@
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np
+import pandas as pd
 import re
 import math
 
@@ -82,6 +82,6 @@ for line in test_data.head(10)['Abstract']:
     results[i] = B.predict_class(line)
     i = i+1
 
-pd.DataFrame(results, columns=['Category']).to_csv("output.csv")
+pd.DataFrame(results, columns=['Category']).to_csv("output.csv") # Can change filename here
 
 
